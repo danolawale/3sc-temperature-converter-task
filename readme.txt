@@ -1,4 +1,4 @@
-- This task uses Php7.4.3
+- This task uses Php 8
 -Composer version is 2.0.14
 
 Run via docker
