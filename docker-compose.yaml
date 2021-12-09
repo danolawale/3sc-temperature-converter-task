@@ -1,0 +1,20 @@
+version: '3.9'
+
+services:
+  phpdev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: php-dev-env
+    tty: true
+    volumes:
+     - .:/usr/src/phpdev
+     
+  composer:
+    image: composer
+    tty: true
+    volumes:
+     - .:/usr/src/phpdev
+    working_dir: /usr/src/phpdev
+    container_name: php-dev-composer
+    command: ["composer", "install"]

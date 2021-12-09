@@ -1,0 +1,3 @@
+#!/bin/bash
+
+docker exec php-dev-env php ./vendor/bin/phpunit $@

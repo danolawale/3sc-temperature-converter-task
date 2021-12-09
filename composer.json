@@ -1,0 +1,19 @@
+{
+    "require": {
+        "symfony/console": "^5.3"
+    },
+     "require-dev": {
+        "phpunit/phpunit": "^9.5"
+     },
+    "autoload": {
+        "psr-4": {
+            "Phpdev\\": "Phpdev"
+        },
+        "classmap": ["."]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}
